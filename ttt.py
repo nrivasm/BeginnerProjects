@@ -1,5 +1,6 @@
 import numpy as np
 import sys
+import itertools
 
  # Setup
 board = np.array([["[]","[]","[]"], ["[]","[]","[]"], ["[]","[]","[]"]])
@@ -83,6 +84,5 @@ def print_board():
 	check_win()
 
 print_board()
-for i in range(1,1000):
+for i in itertools.count():
 	ask_coordinates()
-	
